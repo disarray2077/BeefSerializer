@@ -9,7 +9,7 @@ namespace BeefSerializer
 		private List<uint8> mBuffer ~ delete _;
 		private int mReadOffset;
 
-		public uint8* Data => mBuffer.IsEmpty ? null : mBuffer.Ptr;
+		public uint8* Ptr => mBuffer.IsEmpty ? null : mBuffer.Ptr;
 		public int Length => mBuffer.Count;
 		public int ReadLength => mBuffer.Count - mReadOffset;
 

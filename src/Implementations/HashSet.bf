@@ -14,16 +14,16 @@ namespace BeefSerializer
 
 			Put((uint32)objs.Count);
 
-			if (typeof(T).Size > sizeof(int))
-			{
-				for (let obj in ref objs)
-					Put(obj);
-			}
-			else
-			{
-				for (let obj in objs)
-					Put(obj);
-			}
+			//if (typeof(T).Size > sizeof(int))
+			//{
+			//	for (let obj in ref objs)
+			//		Put(obj);
+			//}
+			//else
+			//{
+			for (let obj in objs)
+				Put(obj);
+			//}
 		}
 
 		public SerializerResult Get<T>(ref HashSet<T> obj) where T : var

@@ -1,0 +1,5 @@
+FileVersion = 1
+
+[Project]
+Name = "BeefSerializer"
+ProcessorMacros = ["_BFSERIALIZER_EXCLUDE_RUNTIME_CHECKS", "_BFSERIALIZER_NO_NULLSIGN_SUPPORT"]

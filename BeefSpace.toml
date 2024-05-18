@@ -1,0 +1,6 @@
+FileVersion = 1
+Projects = {BeefSerializer = {Path = "."}, BeefSerializerTests = {Path = "Tests"}}
+Unlocked = ["corlib"]
+
+[Configs.Test.Win64]
+ConfigSelections = {BeefSerializer = {Config = "Debug"}, BeefSerializerTests = {Config = "Test"}}
